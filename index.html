@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome Back, Lieutenant!</title>
     <style>
         body {
             display: flex;
@@ -27,12 +27,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome back, Lieutenant Shaunte<span id="name"></span>!</h1>
-        <p>Happy Valentine's Day if no one has told you!</p>
+        <h1>Welcome Back, Lieutenant <span id="name"></span>!</h1>
+        <p>Happy Valentine's Day if no one has told you! 💖</p>
     </div>
     <script>
+        // Set default name to "Shaunte"
         const urlParams = new URLSearchParams(window.location.search);
-        const name = urlParams.get('name') || "Friend";
+        const name = urlParams.get('name') || "Shaunte";
         document.getElementById("name").textContent = name;
     </script>
 </body>
