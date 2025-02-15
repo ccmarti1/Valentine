@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Valentine's Day!</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            background: pink;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: white;
-        }
-
-        h1 {
-            font-size: 36px;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        .valentine {
-            width: 100%;
-            height: 100%;
-            background: url('data:image/jpeg;base64,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') no-repeat center center;
-            background-size: cover;
-            position: absolute;
-            z-index: -1;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Valentine's Day!</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                flex-direction: column;
+                background: url('https://raw.githubusercontent.com/ccmarti1/Valentine/refs/heads/main/petsbuz_com.jpg') no-repeat center center fixed;
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                color: white;
+            }
+    
+            h1 {
+                font-size: 36px;
+                text-shadow: 2px 2px 4px black;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 20px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
 <body>
     <div class="valentine"></div>
     <h1> Happy Valentine’s Day! </h1>
-    <h2>From your friend C</h2>
+    <h2>From C</h2>
 </body>
 </html>
